@@ -1,0 +1,68 @@
+@keyframes loading {
+  0% {
+    transform: rotate(0)
+  }
+
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+.scroll-wrap{
+  position: relative;
+}
+.scroll-loading{
+  position:absolute;
+  top:0;
+  height:45px;
+  line-height:45px;
+  color:#666;
+  width:100%;
+  z-index:-1;
+  font-size:12px;
+  text-align:center;
+}
+.icon{
+  display:inline-block;
+  height: 11px;
+  width:11px;
+  margin-left:.12rem;
+  background: url('../../img/loading-s.png');
+  background-size:100% 100%;
+  vertical-align:middle;
+  animation: loading 1s linear infinite;
+}
+.tip{
+  position: absolute;
+  height:45px;
+  line-height:45px;
+  color:#fff;
+  width:100%;
+  z-index:2;
+  text-align:center;
+  background:rgba(255,145,83, .8);
+}
+.page-next{
+  display:block;
+  overflow: hidden;
+  text-indent: -9999px;
+  background:#fff;
+}
+.loading-buttom{
+  height:.4rem;
+  line-height:.4rem;
+  color:#666;
+  background:#fff;
+  text-align:center;
+  font-size:.24rem;
+  span{
+    vertical-align:middle;
+    height:.24rem;
+    width:.24rem;
+    margin-left:.1rem;
+    display:inline-block;
+    background:url('../../img/loading-s.png');
+    background-size: 100% 100%;
+      animation: loading .5s linear infinite;
+  }
+}
